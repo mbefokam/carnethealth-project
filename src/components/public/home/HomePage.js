@@ -1,28 +1,45 @@
-import  React from 'react';
-import {Link} from 'react-router-dom';
-import  Slideshow from './Slideshow';
-import { Jumbotron,Button }from  'react-bootstrap';
-class HomePage extends React.Component{
-    render(){
+import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
+import { Grid, Paper } from 'material-ui';
+import { withStyles } from 'material-ui/styles';
+import CssBaseline from 'material-ui/CssBaseline';
+
+import Slideshow from './Slideshow';
+import HomeCard from './HomeCard';
+import TablesMedical from './TablesMedical';
+
+const styles = {
+    paper: {
+        padding: 0,
+        marginTop: 10,
+        marginBottom: 5,
+    }
+}
+//<Slideshow />
+class HomePage extends React.Component {
+    render() {
         return (
-            <div>
-            <Slideshow />
-            <h1>  </h1>
-            <h1>  </h1>
-            <Jumbotron>
-                <h1>CarnetHealth Inc.</h1>
-                 <p>
-                       This is a simple hero unit, a simple jumbotron-style component for calling
-                       extra attention to featured content or information.
-                 </p>
-                  <p>
-                   <Button bsStyle="primary"><Link to ="about">Learn more</Link></Button>
-                 </p>
-            </Jumbotron>
-            <div className="jumpbotron">
-            <h1>  </h1>
-            </div>
-            </div>
+        <Fragment>
+            <CssBaseline />
+            <Grid container spacing={24}>
+            <Grid item xs={8}>
+              <Paper className={styles.paper}>
+              <Slideshow />
+              </Paper>
+            </Grid>
+            <Grid item xs>
+            <HomeCard />
+            </Grid>
+           </Grid>
+           <Grid container spacing={24}>
+            <Grid item xs={8}>
+              <HomeCard />
+            </Grid>
+            <Grid item xs>
+            <HomeCard />
+            </Grid>
+           </Grid>
+          </Fragment>
         );
     }
 }
