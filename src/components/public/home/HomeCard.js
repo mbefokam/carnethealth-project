@@ -1,3 +1,4 @@
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
@@ -7,12 +8,11 @@ import Typography from 'material-ui/Typography';
 import { Link } from 'react-router-dom';
 
 const styles = {
-  card: {
-    maxWidth: 445,
-    maxheight: 500
-  },
+  // card: {
+  //   maxWidth: 345,
+  // },
   media: {
-    height: 300,
+    height: 200,
   },
 };
 
@@ -20,12 +20,15 @@ function SimpleMediaCard(props) {
   const { classes } = props;
   return (
     <div>
-      <Card className={classes.card}>
+      <Card style={{width:'100%'}}>
         <CardMedia
           className={classes.media}
-          image="../../../assets/images/HealthcareTech.jpg"
+          image={props.images}
           title="CarnetHealth Inc"
-        />
+        >
+        
+        </CardMedia>
+        
         <CardContent>
           <Typography gutterBottom variant="headline" component="h2">
             Who We Are

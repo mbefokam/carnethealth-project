@@ -2,7 +2,7 @@ import React from 'react';
 
 import {Carousel} from 'react-bootstrap';
 
-import HealthcareTech from '../../../assets/images/HealthcareTech.jpg';
+import HealthcareTech from '../../../assets/images/Home/Slider/HealthcareTech.jpg';
 
 
 const slideshow = () => (
