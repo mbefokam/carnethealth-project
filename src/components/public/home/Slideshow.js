@@ -1,11 +1,13 @@
 import React from 'react';
+//import { Carousel, CarouselInner, CarouselControl,CarouselItem,CarouselCaption} from 'mdbreact';
 
+//import { Button, Card, CardBody, CardImage, CardTitle, CardText } from 'mdbreact';
 import {Carousel} from 'react-bootstrap';
 
 import HealthcareTech from '../../../assets/images/Home/Slider/HealthcareTech.jpg';
 
 
-const slideshow = () => (
+const slideshow = () =>  
 
 <Carousel>
   <Carousel.Item>
@@ -30,8 +32,6 @@ const slideshow = () => (
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
-
-);
 
 
 export default slideshow;

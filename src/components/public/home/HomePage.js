@@ -5,6 +5,7 @@ import { withStyles } from 'material-ui/styles';
 import CssBaseline from 'material-ui/CssBaseline';
 import { Grid, Col, Row } from 'react-bootstrap';
 
+
 import Slideshow from './Slideshow';
 import HomeCard from './HomeCard';
 import TablesMedical from './TablesMedical';
@@ -16,16 +17,15 @@ import PatientDigitalData from '../../../assets/images/Home/Cards/PatientDigital
 const styles = {
     padding: 0,
     marginTop: 20,
-    marginBottom: 10,
-    marginLeft: 10
+    marginBottom: 20
 
 }
 
-
+//<Slideshow /> <HomeCard  images ={PatientDocumentation} />
 class HomePage extends React.Component {
     render() {
         return (
-            <Grid>
+            <Grid style={styles}>
                  {/* <Grid style={{
                     padding: 0,
                     marginTop: 20,
@@ -34,7 +34,6 @@ class HomePage extends React.Component {
                 }}> */}
                     <Row className="show-grid" style={{
                     padding: 0,
-                    marginTop: 20,
                     marginBottom: 10,
 
                 }}>
