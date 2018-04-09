@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { withStyles } from 'material-ui/styles';
 import { ListItem, ListItemText } from 'material-ui/List';
 import { Divider, Paper, Typography, List } from 'material-ui';
@@ -18,7 +18,7 @@ const styles = {
 }
 
 const DividerMenu = () => (
-<Fragment>
+<div>
 <Paper style={styles.Paper}>
 <List component="nav"style={{
       marginTop: 60,
@@ -47,7 +47,7 @@ const DividerMenu = () => (
         <Divider />
     </List>
     </Paper>
-</Fragment> 
+</div> 
 
 );
 export default  DividerMenu;

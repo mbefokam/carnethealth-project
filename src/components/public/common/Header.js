@@ -10,13 +10,6 @@ import './Header.css';
 const Header = () => {
     return(
       <div>
-      {/* <nav >
-      < Link to="/" activeClassName="active">Home</ Link>
-       {" | "}
-       < Link to="/about" activeClassName="active">About</ Link>
-          {" | "}
-          < Link to="/contact" activeClassName="active">Contact</ Link>
-      </nav> */}
 
 <Navbar  collapseOnSelect   >
   <Navbar.Header>
