@@ -5,7 +5,9 @@ import Home from '../home/HomePage';
 import About from '../about/AboutPage';
 import Contact from  '../contact/ContactPage';
 import { Navbar,Nav,NavItem }from  'react-bootstrap';
-import './Header.css';
+import './Header.css'; 
+
+ 
 
 const Header = () => {
     return(
@@ -27,7 +29,9 @@ const Header = () => {
        < Link to="/about"  >About</ Link>
       </NavItem>
       <NavItem eventKey={3} href="#">
-      < Link to="/contact"  >Contact</ Link>
+      < Link to="/contact"  >Contact
+      
+      </ Link>
       </NavItem>
     </Nav>
     <Nav pullRight>
@@ -42,9 +46,24 @@ const Header = () => {
 </Navbar>
       <Route path="/" exact component={Home} />
       <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
+      <Route path="/contact" component={Contact} 
+       
+      
+      />
       </div>
     );
 };
+
+// const contactUs = () => ( 
+
+//  <Provider store={store}>
+//     <MuiThemeProvider  >
+//       <div style={{ padding: 15 }}>
+//         <h2>Contact CarnetHealth Inc Team</h2>
+//         <Contact onSubmit={ShowResults} />
+//         <Values form="MaterialUiForm" />
+//       </div>
+//     </MuiThemeProvider>
+//   </Provider>)
 
 export default Header;

@@ -1,14 +1,9 @@
-import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
-import { Paper } from 'material-ui';
-import { withStyles } from 'material-ui/styles';
-import CssBaseline from 'material-ui/CssBaseline';
+import React  from 'react';  
 import { Grid, Col, Row } from 'react-bootstrap';
 
 
 import Slideshow from './Slideshow';
-import HomeCard from './HomeCard';
-import TablesMedical from './TablesMedical';
+import HomeCard from './HomeCard'; 
 import PatientDocumentation from '../../../assets/images/Home/Cards/PatientDocumentation.jpg';
 import PatientRecords from '../../../assets/images/Home/Cards/PatientRecords.jpg';
 import PatientDigitalData from '../../../assets/images/Home/Cards/PatientDigitalData.jpg';

@@ -1,7 +1,6 @@
-import React from 'react';
-import { withStyles } from 'material-ui/styles';
+import React from 'react'; 
 import { ListItem, ListItemText } from 'material-ui/List';
-import { Divider, Paper, Typography, List } from 'material-ui';
+import { Divider, Paper,   List } from 'material-ui';
 
 const styles = {
   Paper: {

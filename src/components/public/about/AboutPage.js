@@ -1,14 +1,8 @@
-import React from 'react';
-import SideMenu from './SideMenu';
-//import Divider from 'material-ui/Divider';
-import { List, ListItem, Divider, TextField, Paper } from 'material-ui';
-import { Grid, Row, Col,Image} from 'react-bootstrap';
-import PaperSheet from './PaperSheet';
-import Vision from './Vision';
-import PatientDigitalData from '../../../assets/images/Home/Cards/PatientDigitalData.jpg';
-import HomeCard from '../home/HomeCard';
+import React from 'react'; 
+import { Grid, Row, Col,Image} from 'react-bootstrap'; 
+import Vision from './Vision';  
 import './AboutPage.css';
-import TopImage from '../../../assets/images/About/TopImage/dog-people.jpg';
+import TopImage from '../../../assets/images/About/TopImage/medicalSystem.jpg';
 
 const styles = {
     padding: 0,
@@ -38,16 +32,14 @@ class AboutPage extends React.Component {
                         </Col>
                     </Row>
                     <Row className="show-grid">
-                        <Col sm={8} md={4}>
+                        <Col sm={6} md={2}>
                          
                         </Col>
-                        <Col sm={8} md={4}>
-                         
-                        />
+                        <Col sm={16} md={12}>
+                        <Vision /> 
                         </Col>
-                        <Col sm={8} md={4}>
-                         
-                        />
+                        <Col sm={6} md={2}>
+                          
                         </Col>
                     </Row> 
 
