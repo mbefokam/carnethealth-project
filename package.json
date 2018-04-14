@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/icons": "^1.0.0-beta.42",
     "bootstrap": "^4.0.0",
     "classnames": "^2.2.5",
     "eslint": "^4.19.1",
@@ -31,6 +32,8 @@
     "redux-form": "^7.3.0",
     "redux-form-material-ui": "^4.3.4",
     "redux-form-website-template": "0.0.112",
+    "simple-react-form": "^2.0.1",
+    "simple-react-form-material-ui": "^1.7.13",
     "typeface-roboto": "0.0.54"
   },
   "scripts": {
