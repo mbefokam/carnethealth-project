@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Link } from 'react-router-dom';
 import Button from 'material-ui/Button';
 // import classNames from 'classnames';
 import 'typeface-roboto';
@@ -41,7 +42,11 @@ const styles = theme => ({
   },
   formControl: {
     margin: theme.spacing.unit,
-    minWidth: 120
+    minWidth: 120,
+    zIndex: 1000,
+    backgroundColor: '#000000',
+    opacity: 0.5,
+    textAlign: 'center',
   }
 });
 
@@ -59,7 +64,7 @@ const styles = theme => ({
 //     label: 'Provider',
 //   },
 // ];
-
+const signUp = < Link to="/sign-up"/>
 class FormDialog extends React.Component {
   state = {
     open: false,
@@ -71,7 +76,7 @@ class FormDialog extends React.Component {
   handleChange = prop => event => {
     this.setState({ [prop]: event.target.value });
   };
-
+   
   handleMouseDownPassword = event => {
     event.preventDefault();
   };
@@ -88,6 +93,9 @@ class FormDialog extends React.Component {
     this.setState({ open: false });
   };
 
+  handleSignup=()=>{
+    this.setState({ signUp});
+  }
   render() {
     const { classes } = this.props;
     return (
@@ -99,6 +107,12 @@ class FormDialog extends React.Component {
           disableEscapeKeyDown
           open={this.state.open}
           onClose={this.handleClose}
+          styles={{
+            zIndex: 1000,
+            backgroundColor: '#000000',
+            opacity: 0.5,
+            textAlign: 'center',
+        }}
         >
           <DialogTitle >
           <Typography variant="headline" gutterBottom>
@@ -162,11 +176,11 @@ class FormDialog extends React.Component {
         </FormControl>
           </DialogContent>
           <DialogActions>
-            <Button onClick={this.handleClose} color="primary">
-              Sign up
+            <Button onClick={this.handleSignup} color="primary">
+             Sign up
             </Button>
             <Button onClick={this.handleClose} color="primary">
-              Login
+              Sign in
             </Button>
           </DialogActions>
         </Dialog>
@@ -174,6 +188,8 @@ class FormDialog extends React.Component {
     );
   }
 }
+
+
 
 FormDialog.propTypes = {
   classes: PropTypes.object.isRequired,
